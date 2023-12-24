@@ -1,0 +1,178 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid $primary-text-color;
+  &__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: $logo-color;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    text-decoration: none;
+    &__blue {
+      color: $background-button-color;
+    }
+  }
+  &__list {
+    color: $title-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    display: flex;
+    margin: 0;
+    transition: color 250ms $time-function;
+    animation-name: chColorlist;
+    &:hover {
+      color: $background-button-color;
+    }
+  }
+  @keyframes chColorlist {
+    0% {
+      color: $title-text-color;
+    }
+    100% {
+      color: $background-button-color;
+    }
+  }
+  &__item::not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link__one {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    color: $background-button-color;
+    position: relative;
+  }
+  &__link__one.current:after {
+    display: block;
+    position: absolute;
+    bottom: -33px;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: $-background-button-color;
+    border-radius: 4px;
+    margin-top: 28px;
+    transition: background-color 250ms $time-function;
+  }
+  &__link__one:hover.current:after {
+    background-color: #51a9f2;
+    transition: background-color 250ms $time-function;
+    animation-name: chCurrent;
+  }
+  @keyframes chCurrent {
+    0% {
+      background-color: $background-button-color;
+    }
+    100% {
+      background-color: #51a9f2;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $title-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chLink;
+
+    &:hover,
+    &:focus {
+      color: $background-button-color;
+    }
+  }
+  @keyframes chLink {
+    0% {
+      color: $title-text-color;
+    }
+    100% {
+      color: $background-button-color;
+    }
+  }
+}
+.contacts {
+  padding-left: 344px;
+  display: flex;
+  &__item {
+    display: flex;
+  }
+  &__mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+  }
+  .email {
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+  }
+  .icon {
+    fill: $primary-text-color;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chIcon;
+  }
+  @keyframes chIcon {
+    0% {
+      fill: $primary-text-color;
+    }
+    100% {
+      fill: $background-button-color;
+    }
+  }
+  &.icon:hover {
+    color: $background-button-color;
+  }
+  .icon:hover .contacts__phone {
+    fill: $background-button-color;
+  }
+  .icon:hover .contacts__mail {
+    fill: $background-button-color;
+  }
+  &__phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+  }
+  .telephone {
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin-left: 30px;
+  }
+}

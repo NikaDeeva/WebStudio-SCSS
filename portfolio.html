@@ -18,48 +18,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/portfolio.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-wraper">
-          <a class="header-logo" href="./index.html">
-            <span class="logo-blue">Web</span>Studio</a
+        <div class="header__wraper">
+          <a class="header__logo" href="./index.html">
+            <span class="logo__blue">Web</span>Studio</a
           >
-          <nav class="header-nav">
-            <ul class="header-list">
-              <li class="header-list-item">
-                <a class="header-link" href="./index.html">Студія</a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class=" header__link header__link__one current" href="./index.html">Студія</a>
               </li>
-              <li class="header-list-item">
-                <a class="header-link-one current" href="./portfolio.html"
-                  >Портфоліо</a
-                >
+              <li class="header__item">
+                <a class="header__link current" href="./portfolio.html">Портфоліо</a>
               </li>
-              <li class="header-list-item">
-                <a class="header-link" href="#">Контакти</a>
+              <li class="header__item">
+                <a class="header__link current" href="#">Контакти</a>
               </li>
             </ul>
           </nav>
-          <ul class="contacts-list">
-            <li class="contacts-list-item">
+          <ul class="contacts">
+            <li class="contacts__item">
               <a class="email icon" href="mailto:info@devstudio.com">
-                <svg class="contacts-mail">
+                <svg class="contacts__mail">
                   <use href="./imges/symbol-defs.svg#icon-mail"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="contacts-list-item">
+            <li class="contacts__item">
               <a class="telephone icon" href="tel:+380961111111">
-                <svg class="contacts-phone">
+                <svg class="contacts__phone">
                   <use href="./imges/symbol-defs.svg#icon-phone"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11</a>
             </li>
           </ul>
         </div>
@@ -67,240 +62,226 @@
     </header>
     <main class="main container">
       <section class="section">
-        <ul class="button-list">
-          <li class="button-list-item">
-            <button class="button-one" type="button">Усі</button>
+        <ul class="buttons">
+          <li class="buttons__item">
+            <button class="button__one" type="button">Усі</button>
           </li>
-          <li class="button-list-item">
+          <li class="button__item">
             <button class="button" type="button">Веб-сайти</button>
           </li>
-          <li class="button-list-item">
+          <li class="button__item">
             <button class="button" type="button">Додатки</button>
           </li>
-          <li class="button-list-item">
+          <li class="button__item">
             <button class="button" type="button">Дизайн</button>
           </li>
-          <li class="button-list-item">
+          <li class="button__item">
             <button class="button" type="button">Маркетінг</button>
           </li>
         </ul>
-        <ul class="block-list">
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img1.jpg" alt="" />
+        <ul class="block">
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img1.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley___text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Технокряк</h2>
-              <p class="block-text">Веб-сайт</p>
+              <h2 class="block__title">Технокряк</h2>
+              <p class="block__text">Веб-сайт</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img2.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img2.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Постер New Orlean vs Golden Star</h2>
-              <p class="block-text">Дизайн</p>
+              <h2 class="block__title">Постер New Orlean vs Golden Star</h2>
+              <p class="block__text">Дизайн</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img3.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img3.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Ресторан Seafood</h2>
-              <p class="block-text">Додаток</p>
+              <h2 class="block__title">Ресторан Seafood</h2>
+              <p class="block__text">Додаток</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img4.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img4.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Проєкт Prime</h2>
-              <p class="block-text">Маркетинг</p>
+              <h2 class="block__title">Проєкт Prime</h2>
+              <p class="block__text">Маркетинг</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img5.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img5.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Проєкт Boxes</h2>
-              <p class="block-text">Додаток</p>
+              <h2 class="block__title">Проєкт Boxes</h2>
+              <p class="block__text">Додаток</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img6.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img6.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Inspiration has no Borders</h2>
-              <p class="block-text">Веб-сайт</p>
+              <h2 class="block__title">Inspiration has no Borders</h2>
+              <p class="block__text">Веб-сайт</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img7.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img7.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Видання Limited Edition</h2>
-              <p class="block-text">Дизайн</p>
+              <h2 class="block__title">Видання Limited Edition</h2>
+              <p class="block__text">Дизайн</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img8.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img8.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Проєкт LAB</h2>
-              <p class="block-text">Маркетинг</p>
+              <h2 class="block__title">Проєкт LAB</h2>
+              <p class="block__text">Маркетинг</p>
             </a>
           </li>
-          <li class="block-item">
-            <a href="#" class="block-link">
-              <div class="block-wrap">
-                <img class="block-img" src="imges/img9.jpg" alt="" />
+          <li class="block__item">
+            <a href="#" class="block__link">
+              <div class="block__wrap">
+                <img class="block__img" src="imges/img9.jpg" alt="" />
               <div class="overley">
-                <p class="overley-text">
+                <p class="overley__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
               </div>
-              <h2 class="block-title">Growing Business</h2>
-              <p class="block-text">Додаток</p>
+              <h2 class="block__title">Growing Business</h2>
+              <p class="block__text">Додаток</p>
             </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-wrap">
-        <div class="footer-dates">
-          <a class="header-logo" href="./index.html">
-            <span class="logo-blue">Web</span
-            ><span class="logo-white">Studio</span></a
+      <div class="container footer__wrap">
+        <div class="footer__dates">
+          <a class="header__logo" href="./index.html">
+            <span class="logo__blue">Web</span
+            ><span class="logo__white">Studio</span></a
           >
           <address class="address">
-            <div class="address-div">
-              <a class="address-text" href="#"
+            <div class="address__div">
+              <a class="address__text" href="#"
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
-              <a class="footer-email" href="info@devstudio.com"
+              <a class="footer__email" href="info@devstudio.com"
                 >info@devstudio.com</a
               >
-              <a class="footer-tel" href="tel:+380961111111"
+              <a class="footer__tel" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </div>
           </address>
         </div>
-        <div class="footer-div">
-          <h4 class="footer-title">Приєднуйтесь</h4>
-          <ul class="footer-list">
-            <li class="footer-item">
-              <svg class="footer-svg">
+        <div class="footer__div">
+          <h4 class="footer__title">Приєднуйтесь</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <svg class="footer__svg">
                 <use href="./imges/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </li>
-            <li class="footer-item">
-              <svg class="footer-svg">
+            <li class="footer__item">
+              <svg class="footer__svg">
                 <use href="./imges/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </li>
-            <li class="footer-item">
-              <svg class="footer-svg">
+            <li class="footer__item">
+              <svg class="footer__svg">
                 <use href="./imges/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </li>
-            <li class="footer-item">
-              <svg class="footer-svg">
+            <li class="footer__item">
+              <svg class="footer__svg">
                 <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <div class="footer-form-div">
-          <h4 class="form-title">Підпишіться на розсилку</h4>
-          <form class="footer-form">
-            <label class="footer-form-label">
-              <input
-                class="footer-form-input"
-                type="email"
-                placeholder="E-mail"
-              />
+        <div class="footer__form__div">
+          <h4 class="footer__form__title">Підпишіться на розсилку</h4>
+          <form class="footer__form">
+            <label class="footer__form__label">
+              <input class="footer__form__input" type="email" placeholder="E-mail">
             </label>
-            <button class="form-button">Підписатися</button>
-            <svg
-              class="form-button-img"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-            >
-              <path
-                fill="#fff"
-                d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"
-              />
-            </svg>
+            <button class="footer__button">Підписатися
+            </button>
+            <svg class="footer__button__img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="#fff" d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"/></svg>
           </form>
         </div>
       </div>

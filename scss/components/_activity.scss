@@ -1,0 +1,39 @@
+.activity {
+  padding-top: 118px;
+  padding-bottom: 94px;
+  &__title {
+    color: $title-text-color;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    padding-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__imges {
+    width: 370px;
+  }
+  &__text {
+    color: $second-text-color;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 107px;
+    position: relative;
+    bottom: 70px;
+    cursor: pointer;
+    &:last-child {
+      padding: 27px 95px;
+    }
+  }
+}

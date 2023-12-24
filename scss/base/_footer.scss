@@ -1,0 +1,233 @@
+.footer {
+  background-color: $secondary-background-color;
+  padding-top: 94px;
+  padding-bottom: 60px;
+  display: flex;
+  &__wrap {
+    display: flex;
+  }
+  &__dates {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo__white {
+    color: $second-text-color;
+  }
+  .address__div {
+    display: flex;
+    flex-direction: column;
+  }
+  .address__text {
+    color: $second-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  &__email {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chEmail;
+    &:hover {
+      color: $background-button-color;
+    }
+  }
+  @keyframes chEmail {
+    0% {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    100% {
+      color: $background-button-color;
+    }
+  }
+  &__tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chTel;
+    &:hover {
+      color: $background-button-color;
+    }
+  }
+  @keyframes chTel {
+    0% {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    100% {
+      color: $background-button-color;
+    }
+  }
+  &__div {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: $second-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  &__list {
+    display: flex;
+    padding-top: 32px;
+  }
+  &__svg {
+    width: 20px;
+    height: 20px;
+    transition-property: fill background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    cursor: pointer;
+    animation-name: chSvg;
+
+    &:hover {
+      fill: $second-text-color;
+      background-color: #2196f3;
+    }
+  }
+  @keyframes chSvg {
+    0% {
+      fill: none;
+    }
+    100% {
+      fill: var(--second-text-color);
+      background-color: #2196f3;
+    }
+  }
+  &__item {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: fill background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chFitem;
+    &:hover {
+      fill: $second-text-color;
+      background-color: #2196f3;
+    }
+  }
+  @keyframes chFitem {
+    0% {
+      fill: $border-color;
+    }
+    100% {
+      fill: $second-text-color;
+      background-color: #2196f3;
+    }
+  }
+  &__form__div {
+    margin-left: 105px;
+  }
+  .form-title {
+    color: $second-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+  }
+  &__form__input {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(33, 150, 243, 0);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 295;
+    padding-left: 16px;
+    width: 300px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.48px;
+    }
+  }
+  .form__button {
+    color: $second-text-color;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    background-color: $background-button-color;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 62px;
+    padding-right: 28px;
+    margin-left: 12px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chfBtn;
+    &:hover {
+      background-color: rgb(35, 87, 183);
+    }
+  }
+  @keyframes chfBtn {
+    0% {
+      background-color: $background-button-color;
+    }
+    100% {
+      background-color: rgb(35, 87, 183);
+    }
+  }
+  .form__button__img {
+    position: relative;
+    right: 45px;
+    top: 5px;
+  }
+}

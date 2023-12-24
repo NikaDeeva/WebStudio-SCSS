@@ -1,0 +1,81 @@
+.benefits {
+  padding-top: 94px;
+  &__list {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__block {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__letter__one::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__letter__two::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__letter__three::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__letter__four::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__name {
+    color: $title-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  &__text {
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+}
