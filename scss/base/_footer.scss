@@ -151,13 +151,11 @@
   &__form__div {
     margin-left: 105px;
   }
-  .form-title {
+ &__form__title {
     color: $second-text-color;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 14px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
     padding-bottom: 20px;
@@ -173,7 +171,7 @@
     padding-left: 16px;
     width: 300px;
     color: rgba(255, 255, 255, 0.6);
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -181,7 +179,7 @@
     letter-spacing: 0.48px;
     &::placeholder {
       color: rgba(255, 255, 255, 0.6);
-      font-family: "Roboto";
+      font-family: 'Roboto';
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
@@ -189,7 +187,7 @@
       letter-spacing: 0.48px;
     }
   }
-  .form__button {
+  &__button {
     color: $second-text-color;
     text-align: center;
     font-family: "Roboto";
@@ -225,7 +223,7 @@
       background-color: rgb(35, 87, 183);
     }
   }
-  .form__button__img {
+  &__button__img {
     position: relative;
     right: 45px;
     top: 5px;

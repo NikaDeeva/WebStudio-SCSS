@@ -2,13 +2,22 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $background-team-color;
+  &__title{
+    color: $title-text-color;
+    text-align: center;
+font-family: 'Roboto';
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;
+padding-bottom: 50px;
+  }
   &__list {
     display: flex;
   }
   &__card {
     width: 270px;
     border-radius: 0px 0px 4px 4px;
-    background: #fff;
+    background: $second-text-color;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
       0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     &:not(:last-child) {
@@ -46,8 +55,6 @@
   &__img__list__item {
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    fill: $border-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,10 +62,8 @@
     transition-duration: 250ms;
     transition-timing-function: $time-function;
     animation-name: chItem;
-    &:hover {
-      fill: $second-text-color;
-      background-color: #2196f3;
-    }
+    border-radius: 50%;
+   
   }
   @keyframes chItem {
     0% {
@@ -73,5 +78,6 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+    fill: $border-color;
   }
 }

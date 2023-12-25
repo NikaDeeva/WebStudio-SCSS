@@ -139,7 +139,7 @@
     animation-name: chComment;
     &:focus {
       outline: none;
-      border-color: $accent-color;
+      border-color:rgba(33, 33, 33, 0.20);
     }
   }
   .comment::placeholder {
