@@ -44,7 +44,7 @@
   &__item::not(:last-child) {
     margin-right: 50px;
   }
-  &__link__one {
+  &__link-one {
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 500;
@@ -52,7 +52,7 @@
     color: $background-button-color;
     position: relative;
   }
-  &__link__one.current:after {
+  &__link-one.current:after {
     display: block;
     position: absolute;
     bottom: -33px;
