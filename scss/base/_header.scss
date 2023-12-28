@@ -9,7 +9,7 @@
   }
   &__logo {
     color: $logo-color;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     line-height: normal;
@@ -78,14 +78,8 @@
     }
   }
   &__link {
-    text-decoration: none;
     color: $title-text-color;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+    @include textstyle;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $time-function;

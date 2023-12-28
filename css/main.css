@@ -466,16 +466,8 @@
   }
 }
 .header__link {
-  text-decoration: none;
   color: #212121;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  -webkit-transition-property: color;
-  transition-property: color;
+  @in transition-property: color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

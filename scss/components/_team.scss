@@ -3,12 +3,7 @@
   padding-bottom: 94px;
   background-color: $background-team-color;
   &__title{
-    color: $title-text-color;
-    text-align: center;
-font-family: 'Roboto';
-font-size: 36px;
-font-weight: 700;
-letter-spacing: 1.08px;
+   @include title;
 padding-bottom: 50px;
   }
   &__list {

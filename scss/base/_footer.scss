@@ -188,25 +188,14 @@
     }
   }
   &__button {
-    color: $second-text-color;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
-    background-color: $background-button-color;
-    width: 200px;
+    @include btntext;
     height: 50px;
-    border: none;
-    border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 62px;
     padding-right: 28px;
     margin-left: 12px;
-    cursor: pointer;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: $time-function;
