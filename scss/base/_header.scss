@@ -41,7 +41,7 @@
       color: $background-button-color;
     }
   }
-  &__item::not(:last-child) {
+   &__item::not(:last-child) {
     margin-right: 50px;
   }
   &__link-one {
