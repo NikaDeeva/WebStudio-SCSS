@@ -314,12 +314,13 @@
   font-family: "Roboto";
   text-align: center;
   height: 50px;
+  width: 200px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 62px;
-  padding-right: 28px;
+  padding-left: 28px;
   margin-left: 12px;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -1440,6 +1441,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  fill: #afb1b8;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1455,6 +1457,7 @@ img {
   -webkit-animation-name: chItem;
           animation-name: chItem;
   border-radius: 50%;
+  cursor: pointer;
 }
 .team__img-item:hover {
   fill: #fff;
@@ -1482,8 +1485,4 @@ img {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  fill: #afb1b8;
-}
-.team__svg:hover {
-  fill: #fff;
 }/*# sourceMappingURL=main.css.map */
