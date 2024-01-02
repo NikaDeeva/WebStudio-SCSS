@@ -1456,6 +1456,10 @@ img {
           animation-name: chItem;
   border-radius: 50%;
 }
+.team__img-item:hover {
+  fill: #fff;
+  background-color: #2196f3;
+}
 @-webkit-keyframes chItem {
   0% {
     fill: #afb1b8;
@@ -1479,4 +1483,7 @@ img {
   height: 20px;
   cursor: pointer;
   fill: #afb1b8;
+}
+.team__svg:hover {
+  fill: #fff;
 }/*# sourceMappingURL=main.css.map */

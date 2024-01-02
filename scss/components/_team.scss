@@ -58,7 +58,10 @@ padding-bottom: 50px;
     transition-timing-function: $time-function;
     animation-name: chItem;
     border-radius: 50%;
-   
+   &:hover{
+    fill: $second-text-color;
+    background-color: #2196f3;
+   }
   }
   @keyframes chItem {
     0% {
@@ -74,5 +77,8 @@ padding-bottom: 50px;
     height: 20px;
     cursor: pointer;
     fill: $border-color;
+    &:hover{
+      fill: $second-text-color;
+    }
   }
 }
