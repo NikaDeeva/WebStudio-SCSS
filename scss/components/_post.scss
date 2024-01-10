@@ -1,40 +1,69 @@
+
 .post {
-  background-image: url(../imges/Imgfon.png);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  &__title {
-    color: $second-text-color;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
-    margin: 0 auto;
-  }
-  &__button {
-    @include btn;
-    padding: 10px 32px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: $time-function;
-    animation-name: chButton;
-    &:hover {
-      background-color: rgb(35, 87, 183);
+    background-image: url(../imges/Imgfon.png);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    &__title {
+      color: $second-text-color;
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: 900;
+line-height: 162%; 
+letter-spacing: 1.56px;
+text-align: center;
+margin-bottom: 30px;
+  
+    }
+    &__button {
+      @include btn;
+      padding: 10px 32px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      transition-property: background-color;
+      transition-duration: 250ms;
+      transition-timing-function: $time-function;
+      animation-name: chButton;
+      &:hover {
+        background-color: rgb(35, 87, 183);
+      }
+    }
+    @keyframes chButton {
+      0% {
+        background-color: $background-button-color;
+      }
+      100% {
+        background-color: rgb(35, 87, 183);
+      }
     }
   }
-  @keyframes chButton {
-    0% {
-      background-color: $background-button-color;
-    }
-    100% {
-      background-color: rgb(35, 87, 183);
+  @media screen and (min-width: 1200px){
+    .post {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      &__title {
+        font-size: 44px;
+        line-height: 136%;
+        letter-spacing: 2.64px;
+      }
+      &__button{
+        padding: 10px 32px;
+      }
     }
   }
-}
+
+  
+//   &__button {
+//     padding: 10px 32px;
+    
+//   }
+//   @keyframes chButton {
+//     0% {
+//       background-color: $background-button-color;
+//     }
+//     100% {
+//       background-color: rgb(35, 87, 183);
+//     }
+//   }
+// }
