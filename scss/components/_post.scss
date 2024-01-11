@@ -12,6 +12,7 @@ line-height: 162%;
 letter-spacing: 1.56px;
 text-align: center;
 margin-bottom: 30px;
+font-family: 'Roboto', sans-serif;
   
     }
     &__button {
@@ -26,14 +27,6 @@ margin-bottom: 30px;
       transition-timing-function: $time-function;
       animation-name: chButton;
       &:hover {
-        background-color: rgb(35, 87, 183);
-      }
-    }
-    @keyframes chButton {
-      0% {
-        background-color: $background-button-color;
-      }
-      100% {
         background-color: rgb(35, 87, 183);
       }
     }
