@@ -639,7 +639,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 768px;
+    max-width: 1200px;
   }
 }
 .activity {
@@ -684,92 +684,96 @@ img {
   padding: 27px 95px;
 }
 
+@media screen and (max-width: 768px) {
+  .activity {
+    display: none;
+  }
+}
 .benefits {
-  padding-top: 94px;
-}
-.benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.benefits__block {
-  width: 270px;
-}
-.benefits__block:not(:last-child) {
-  margin-right: 30px;
-}
-.benefits__letter__one::before {
-  content: "";
-  display: block;
-  background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-image: url(../imges/benefitsimg1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.benefits__letter__two::before {
-  content: "";
-  display: block;
-  background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-image: url(../imges/benefitsimg2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.benefits__letter__three::before {
-  content: "";
-  display: block;
-  background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-image: url(../imges/benefitsimg3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.benefits__letter__four::before {
-  content: "";
-  display: block;
-  background-color: #f5f4fa;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-image: url(../imges/benefitsimg4.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.benefits__title {
-  color: #212121;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-.benefits__text {
-  color: #757575;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
+  padding-top: 60px;
 }
 
+/*.benefits {
+  padding-top: 94px;
+  &__list {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__block {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__letter__one::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__letter__two::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__letter__three::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__letter__four::before {
+    content: "";
+    display: block;
+    background-color: $background-team-color;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-image: url(../imges/benefitsimg4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title {
+    color: $title-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  &__text {
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+}*/
 .buttons {
   padding-bottom: 50px;
   padding-top: 94px;
