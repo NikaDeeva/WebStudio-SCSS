@@ -74,6 +74,7 @@
   }
   &__card {
     width: 354px;
+    margin-top: 30px;
     &:nth-child(odd) {
       margin-right: 30px;
     }
@@ -83,6 +84,9 @@
 @media screen and (min-width:1200px){
   .team{
     padding-bottom: 94px;
+    &__list{
+      justify-content: space-between;
+    }
 &__card{
   width: 270px;
   &:not(:last-child) {
