@@ -1,4 +1,202 @@
-
+.footer{
+  background-color: $secondary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+  &__logo{
+  margin-left: 245px;
+  }
+  .logo__white {
+    color: $second-text-color;
+  }
+  .address__div {
+    display: flex;
+    flex-direction: column;
+  }
+  .address__text {
+    color: $second-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    text-align: center;
+  }
+  &__email, &__tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    text-align: center;
+    &:hover {
+      color: $background-button-color;
+    }
+  }
+  &__title {
+    color: $second-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 60px;
+  }
+  &__list {
+    display: flex;
+    padding-top: 32px;
+    justify-content: center;
+  }
+  &__svg {
+    width: 20px;
+    height: 20px;
+    transition-property: fill background-color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    cursor: pointer;
+    &:hover {
+      fill: $second-text-color;
+      background-color: #2196f3;
+    }
+  }
+  &__item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $border-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: fill background-color;
+  transition-duration: 250ms;
+  transition-timing-function: $time-function;
+  animation-name: chFitem;
+  &:hover {
+    fill: $second-text-color;
+    background-color: #2196f3;
+  }
+}
+&__form-title{
+color: $second-text-color;
+font-family: 'Roboto';
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+padding-bottom: 20px;
+text-align: center;
+padding-top: 60px;
+}
+&__form__input {
+border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+background-color: rgba(33, 150, 243, 0);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding-top: 15px;
+padding-bottom: 15px;
+padding-right: 387px;
+padding-left: 16px;
+width: 450px;
+color: rgba(255, 255, 255, 0.6);
+font-family: 'Roboto';
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.48px;
+&::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
+}
+&__button {
+  color: $second-text-color;
+  background-color: $background-button-color;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  border-radius: 4px;
+  border: none;
+  font-family: 'Roboto';
+  text-align: center;
+  margin-top: 20px;
+height: 50px;
+width: 200px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 62px;
+padding-left: 28px;
+margin-left: 125px;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: $time-function;
+&:hover {
+  background-color: rgb(35, 87, 183);
+}
+}
+&__button__img {
+position: relative;
+right: 45px;
+top: 5px;
+}
+}
+@media screen and (min-width:768px) {
+  .footer{
+    &__flex{
+    display: flex;
+  }
+  &__logo {
+    margin-right: 234px;
+  }
+  .address__div{
+    margin-right: 165px;
+  }
+  &__input{
+    margin-right: -100px;
+  }
+  &__button{
+    margin-left: 261px;
+  }
+}
+}
+@media screen and (min-width:1200px) {
+  .footer{
+    padding-top: 94px;
+    &__wrap {
+      display: flex;
+    }
+    &__logo{
+      
+    }
+    &__dates {
+      display: flex;
+      flex-direction: column;
+    }
+    &__div {
+      margin-left: 70px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 /*.footer {
   background-color: $secondary-background-color;
   padding-top: 94px;
