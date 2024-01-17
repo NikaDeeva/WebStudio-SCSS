@@ -1,5 +1,5 @@
 
-@mixin title{
+@mixin title(){
     color: $title-text-color;
     text-align: center;
     font-family: 'Roboto';
@@ -7,7 +7,7 @@
     font-weight: 700;
     letter-spacing: 1.08px;
 }
-@mixin btn{
+@mixin btn(){
     color: $second-text-color;
     background-color: $background-button-color;
     cursor: pointer;
