@@ -29,19 +29,19 @@ img{
     display: block;
     width: 100%;
 }
-.container{
-    max-width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-@media screen and (min-width: 768px){
-    .container{
-        max-width: 768px;
-    }
-}
-@media screen and (min-width: 1200px){
-    .container{
-        max-width: 1200px;
-    }
+.container{ 
+    width: 480px; 
+    padding-left: 15px; 
+    padding-right: 15px; 
+    margin: 0 auto; 
+} 
+@media screen and (min-width: 768px){ 
+    .container{ 
+        width: 768px; 
+    } 
+} 
+@media screen and (min-width: 1200px){ 
+    .container{ 
+        width: 1200px; 
+    } 
 }

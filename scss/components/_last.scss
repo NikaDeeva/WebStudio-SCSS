@@ -1,54 +1,57 @@
-.last{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  &__title {
-    @include title;
-     padding-bottom: 30px;
-   }
-   &__list {
-    display: flex;
-    flex-wrap: wrap;
-      margin-left: 30px;
-  }
-    &__item {
-      margin-right: 30px;
-    }
-    &__div{
-      width: 210px;
-height: 92px;
-margin-top: 30px;
-border: 1px solid $border-color;
-border-radius: 4px;
-display: flex;
-justify-content: center;
-align-items: center;
-fill: $border-color;
-transition-property: fill border-color;
-transition-duration: 250ms;
-transition-timing-function: $time-function;
-&:hover,
-&:focus {
-  fill: $background-button-color;
-  border-color: $background-button-color;
-}
-    }
-    &__svg {
-      width: 106px;
-      height: 60px;
-    }
-}
-@media screen and (min-width:768px) {
-  .last__div{
-    width: 226px;
-}
-}
-@media screen and (min-width:1200px){
-  .last__div{
-    width: 170px;
-}
-.last__list{
-  flex-wrap: nowrap;
-}
+.last { 
+  padding-top: 60px; 
+  padding-bottom: 60px; 
+  &__title { 
+    @include title; 
+    padding-bottom: 30px; 
+  } 
+  &__list { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 30px; 
+  } 
+  &__item { 
+    flex-basis: calc((100% - 30px) / 2); 
+  } 
+  &__div { 
+    width: 210px; 
+    height: 92px; 
+    margin-top: 30px; 
+    border: 1px solid $border-color; 
+    border-radius: 4px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    fill: $border-color; 
+    transition-property: fill border-color; 
+    transition-duration: 250ms; 
+    transition-timing-function: $time-function; 
+    &:hover, 
+    &:focus { 
+      fill: $background-button-color; 
+      border-color: $background-button-color; 
+    } 
+  } 
+  &__svg { 
+    width: 106px; 
+    height: 60px; 
+  } 
+} 
+@media screen and (min-width: 768px) { 
+  .last__item{ 
+    flex-basis: calc((100% - 60px) / 3); 
+  } 
+  .last__div { 
+    width: 226px; 
+  } 
+} 
+@media screen and (min-width: 1200px) { 
+  .last__div { 
+    width: 170px; 
+  } 
+  .last__list { 
+    flex-wrap: nowrap; 
+  } 
 }
 /*.last {
   padding-top: 94px;
