@@ -1,4 +1,21 @@
-.header {
+.header{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $primary-text-color;
+  &__logo {
+    color: $logo-color;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    position: relative;
+    right: 93px;
+    .logo__blue {
+      color: $background-button-color;
+    }
+  }
+}
+/*.header {
   padding-top: 24px;
   padding-bottom: 28px;
   border-bottom: 1px solid $primary-text-color;
@@ -162,3 +179,4 @@
     margin-left: 30px;
   }
 }
+*/

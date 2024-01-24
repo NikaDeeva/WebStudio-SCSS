@@ -584,27 +584,15 @@
 }
 */
 .header {
-  padding-top: 24px;
-  padding-bottom: 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #757575;
-}
-.header__wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 .header__logo {
   color: #000;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.78px;
   position: relative;
   right: 93px;
@@ -612,207 +600,172 @@
 .header__logo .logo__blue {
   color: #2196f3;
 }
-.header__list {
-  color: #212121;
-  font-family: "Roboto";
-  text-decoration: none;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation-name: chColorlist;
-          animation-name: chColorlist;
-}
-.header__list:hover {
-  color: #2196f3;
-}
-@-webkit-keyframes chColorlist {
-  0% {
-    color: #212121;
-  }
-  100% {
-    color: #2196f3;
-  }
-}
-@keyframes chColorlist {
-  0% {
-    color: #212121;
-  }
-  100% {
-    color: #2196f3;
-  }
-}
-.header__link-one {
-  color: #2196f3;
-  position: relative;
-  margin-right: 50px;
-}
-.header__link-one.current:after {
-  display: block;
-  position: absolute;
-  bottom: -33px;
-  content: "";
-  width: 100%;
-  height: 5px;
-  background-color: #2196f3;
-  border-radius: 4px;
-  margin-top: 28px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation-name: chCurrent;
-          animation-name: chCurrent;
-  margin-right: 50px;
-}
-@-webkit-keyframes chCurrent {
-  0% {
-    background-color: #2196f3;
-  }
-  100% {
-    background-color: #51a9f2;
-  }
-}
-@keyframes chCurrent {
-  0% {
-    background-color: #2196f3;
-  }
-  100% {
-    background-color: #51a9f2;
-  }
-}
-.header__link {
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation-name: chLink;
-          animation-name: chLink;
-  margin-right: 50px;
-}
-.header__link:hover, .header__link:focus {
-  color: #2196f3;
-}
-@-webkit-keyframes chLink {
-  0% {
-    color: #212121;
-  }
-  100% {
-    color: #2196f3;
-  }
-}
-@keyframes chLink {
-  0% {
-    color: #212121;
-  }
-  100% {
-    color: #2196f3;
-  }
-}
 
+/*.header {
+  padding-top: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid $primary-text-color;
+  &__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: $logo-color;
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    position: relative;
+    right: 93px;
+    .logo__blue {
+      color: $background-button-color;
+    }
+  }
+  &__list {
+    color: $title-text-color;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    display: flex;
+    margin: 0;
+    transition: color 250ms $time-function;
+    animation-name: chColorlist;
+    &:hover {
+      color: $background-button-color;
+    }
+  }
+  @keyframes chColorlist {
+    0% {
+      color: $title-text-color;
+    }
+    100% {
+      color: $background-button-color;
+    }
+  }
+  &__link-one {
+    color: $background-button-color;
+    position: relative;
+    margin-right: 50px;
+  }
+  &__link-one.current:after {
+    display: block;
+    position: absolute;
+    bottom: -33px;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: $background-button-color;
+    border-radius: 4px;
+    margin-top: 28px;
+    transition: background-color 250ms $time-function;
+    animation-name: chCurrent;
+    margin-right: 50px;
+  }
+  @keyframes chCurrent {
+    0% {
+      background-color: $background-button-color;
+    }
+    100% {
+      background-color: #51a9f2;
+    }
+  }
+  &__link {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chLink;
+    margin-right: 50px;
+
+    &:hover,
+    &:focus {
+      color: $background-button-color;
+    }
+  }
+  @keyframes chLink {
+    0% {
+      color: $title-text-color;
+    }
+    100% {
+      color: $background-button-color;
+    }
+  }
+}
 .contacts {
   padding-left: 344px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-.contacts__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.contacts__mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts .email {
-  color: #757575;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.28px;
-}
-.contacts .icon {
-  fill: #757575;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-animation-name: chIcon;
-          animation-name: chIcon;
-}
-@-webkit-keyframes chIcon {
-  0% {
-    fill: #757575;
+  &__item {
+    display: flex;
   }
-  100% {
-    fill: #2196f3;
+  &__mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+  }
+  .email {
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+  }
+  .icon {
+    fill: $primary-text-color;
+    display: flex;
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+    animation-name: chIcon;
+  }
+  @keyframes chIcon {
+    0% {
+      fill: $primary-text-color;
+    }
+    100% {
+      fill: $background-button-color;
+    }
+  }
+  .icon:hover {
+    color: $background-button-color;
+  }
+  .icon:hover .contacts__phone {
+    fill: $background-button-color;
+  }
+  .icon:hover .contacts__mail {
+    fill: $background-button-color;
+  }
+  &__phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $time-function;
+  }
+  .telephone {
+    color: $primary-text-color;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    margin-left: 30px;
   }
 }
-@keyframes chIcon {
-  0% {
-    fill: #757575;
-  }
-  100% {
-    fill: #2196f3;
-  }
-}
-.contacts .icon:hover {
-  color: #2196f3;
-}
-.contacts .icon:hover .contacts__phone {
-  fill: #2196f3;
-}
-.contacts .icon:hover .contacts__mail {
-  fill: #2196f3;
-}
-.contacts__phone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: #757575;
-  -webkit-transition-property: fill;
-  transition-property: fill;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts .telephone {
-  color: #757575;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  margin-left: 30px;
-}
-
+*/
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
