@@ -600,6 +600,10 @@
 .header__logo .logo__blue {
   color: #2196f3;
 }
+.header__list,
+.header .contacts {
+  display: none;
+}
 
 /*.header {
   padding-top: 24px;
