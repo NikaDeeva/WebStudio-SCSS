@@ -587,6 +587,9 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #757575;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .header__logo {
   color: #000;
@@ -602,6 +605,13 @@
 }
 .header__list,
 .header .contacts {
+  display: none;
+}
+.header .menu-toggle {
+  background-color: transparent;
+  border: none;
+}
+.header .js-menu-container {
   display: none;
 }
 
