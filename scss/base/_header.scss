@@ -11,8 +11,7 @@
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
-    position: relative;
-    right: 93px;
+    padding-left:13px ;
     .logo__blue {
       color: $background-button-color;
     }
@@ -44,7 +43,6 @@
   .js-menu-container.is-open{
   display: block;
   width: 100%;
-  height: 100%;
   position: fixed;
   background-color: $second-text-color;
   transition: display 250ms $time-function;
@@ -116,16 +114,21 @@ margin-left: 15px;
 .header{
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
   .menu-toggle{
     display: none;
   }
+  &__logo{
+    padding-left: 15px;
+    padding-right: 88px;
+  }
   &__list {
+    display: flex;
     color: $title-text-color;
     font-family: 'Roboto';
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 0.28px;
-    display: flex;
     margin: 0;
     transition: color 250ms $time-function;
     &:hover {
@@ -170,7 +173,6 @@ margin-left: 15px;
   padding-left: 344px;
   display: block;
   &__item {
-    display: flex;
     padding-top: 10px;
   }
   &__mail {
@@ -234,9 +236,6 @@ margin-left: 15px;
   .contacts {
     padding-left: 344px;
     display: flex;
-    &__item {
-      display: flex;
-    }
     &__mail{
       margin-right: 10px;
     }
