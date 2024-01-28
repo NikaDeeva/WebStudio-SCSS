@@ -1253,6 +1253,20 @@ img {
     width: 270px;
   }
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefits__letter__one::before {
+    background-image: url(../imges/benefitsone@2x.png);
+  }
+  .benefits__letter__two::before {
+    background-image: url(../imges/benefitstwo@2x.png);
+  }
+  .benefits__letter__three::before {
+    background-image: url(../imges/benefitsthree@2x.png);
+  }
+  .benefits__letter__four::before {
+    background-image: url(../imges/benefitsfour@2x.png);
+  }
+}
 /*.benefits {
   padding-top: 94px;
   &__list {
@@ -2137,6 +2151,11 @@ img {
   }
   .post__button {
     padding: 10px 32px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .post {
+    background-image: url(../imges/Imgfon@2x.jpg);
   }
 }
 .team {
