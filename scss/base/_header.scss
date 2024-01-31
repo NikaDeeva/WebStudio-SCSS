@@ -12,6 +12,8 @@
     font-weight: 700; 
     letter-spacing: 0.78px; 
     padding-left: 13px; 
+    position: relative;
+    top: 15px;
     .logo__blue { 
       color: $background-button-color; 
     } 
@@ -29,6 +31,7 @@
     background-color: transparent; 
     border: none; 
     margin-right: 10px; 
+    margin-left: 505px;
     cursor: pointer; 
   } 
   .js-close-menu { 
@@ -132,6 +135,7 @@
     &__logo { 
       padding-left: 15px; 
       padding-right: 88px; 
+      top: -8px;
     } 
     &__list { 
       color: $title-text-color; 
