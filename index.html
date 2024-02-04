@@ -44,7 +44,7 @@
                 <li class="contacts__item">  
                   <a class="email icon" href="mailto:info@devstudio.com">  
                     <svg class="contacts__mail">  
-                      <use href="./imges/symbol-defs.svg#icon-mail"></use>  
+                      <use href="./imges/svg/symbol-defs.svg#icon-mail"></use>  
                     </svg>  
                     info@devstudio.com</a  
                   >  
@@ -52,7 +52,7 @@
                 <li class="contacts__item">  
                   <a class="telephone icon" href="tel:+380961111111">  
                     <svg class="contacts__phone">  
-                      <use href="./imges/symbol-defs.svg#icon-phone"></use>  
+                      <use href="./imges/svg/symbol-defs.svg#icon-phone"></use>  
                     </svg>  
                     +38 096 111 11 11</a>  
                 </li>  
@@ -124,10 +124,9 @@
             </li>  
             <li class="menu-dates__item">  
               <a class="menu-dates__link" href="#">Facebook</a>
-    </li>  
+           </li>  
             <li class="menu-dates__item">  
-              <a class="menu-dates__link" 
-    href="#">Linkedin</a>  
+              <a class="menu-dates__link" href="#">Linkedin</a>  
             </li>  
           </ul>  
         </div>    
@@ -143,7 +142,7 @@
             <div class="modal">
                 <button data-modal-close type="button" class="modal__close__button">
                      <svg class="modal__icon" width="18" height="18">
-                        <use href="./imges/icon.svg#icon-close"></use>
+                        <use href="./imges/svg/icon.svg#icon-close"></use>
                     </svg> 
                 </button>
                 <form class="modal-form">
@@ -152,21 +151,21 @@
                         <label class="modal-form__label" for="name">Ім'я</label>
                         <input class="modal-form__input" type="text" name="name" id="name" />
                         <svg class="modal-form__icon" width=18px height=18px>
-                            <use href=./imges/icon.svg#icon-person></use>
+                            <use href=./imges/svg/icon.svg#icon-person></use>
                         </svg>
                     </div>
                     <div class="modal-form__field">
                         <label class="modal-form__label" for="tel">Телефон</label>
                         <input class="modal-form__input" type="tel" name="tel" id="tel" />
                         <svg class="modal-form__icon" width=18px height=18px>
-                            <use href=./imges/icon.svg#icon-phone-form></use>
+                            <use href=./imges/svg/icon.svg#icon-phone-form></use>
                         </svg>
                     </div>
                     <div class="modal-form__field">
                         <label class="modal-form__label" for="mail">Пошта</label>
                         <input class="modal-form__input" type="email" name="email" id="mail" />
                         <svg class="modal-form__icon" width=18px height=18px>
-                            <use href=./imges/icon.svg#icon-email-form></use>
+                            <use href=./imges/svg/icon.svg#icon-email-form></use>
                         </svg>
                     </div>
                     <div class="modal-form__field">
@@ -237,22 +236,22 @@
           <div class="activity__list">
             <div>
               <picture class="activity__imges">
-                <source srcset="./imges/activityone.jpg 1x, ./imges/activityone@2x.jpg 2x" type="image/jpg"> 
-                <img src="./imges/activityone.jpg" alt="Пишемо код">
+                <source srcset="./imges/desktop/activityone-desktop.jpg 1x, ./imges/desktop/activityone-desktop@2x.jpg 2x" type="image/jpg"> 
+                <img src="./imges/desktop/activityone.jpg" alt="Пишемо код">
               </picture>
               <p class="activity__text">Десктопні додатки</p>
             </div>
             <div>
               <picture class="activity__imges">
-               <source srcset="./imges/activitytwo.jpg 1x, ./imges/activitytwo@2x.jpg 2x" type="image/jpg">
-               <img src="./imges/activitytwo.jpg" alt="Аналілуємо">
+               <source srcset="./imges/desktop/activitytwo-desktop.jpg 1x, ./imges/desktop/activitytwo-desktop@2x.jpg 2x" type="image/jpg">
+               <img src="./imges/desktop/activitytwo.jpg" alt="Аналілуємо">
               </picture>
               <p class="activity__text">Мобільні додатки</p>
             </div>
             <div>
               <picture class="activity__imges">
-               <source srcset="./imges/activitythree.jpg 1x, ./imges/activitythree@2x.jpg 2x" type="image/jpg">
-               <img src="./imges/activitythree.jpg" alt="Дизайн">
+               <source srcset="./imges/desktop/activitythree-desktop.jpg 1x, ./imges/desktop/activitythree-desktop@2x.jpg 2x" type="image/jpg">
+               <img src="./imges/desktop/activitythree.jpg" alt="Дизайн">
               </picture>
               <p class="activity__text">Дизайнерські рішення</p>
             </div>
@@ -265,120 +264,128 @@
           <ul class="team__list">
             <li class="team__card">
               <picture class="team__img">
-                <source srcset="./imges/teamone.jpg 1x, ./imges/teamone@2x.jpg 2x" type="image/jpg">
-                <img src="./imges/teamone.jpg" alt="Ігор Дем'яненко">
+                <source srcset="./imges/desktop/teamone-desktop.jpg 1x, ./imges/desktop/teamone-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                <source srcset="./imges/tablet/teamone-tablet.jpg 1x, ./imges/tablet/teamone-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg">
+                <source srcset="./imges/mobile/teamone-mobile.jpg 1x, ./imges/mobile/teamone-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg">
+                <img src="./imges/desktop/teamone-desktop.jpg" alt="Ігор Дем'яненко">
               </picture>
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__position">Product Designer</p>
               <ul class="team__img-list">
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-instagram"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-twitter"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-facebook"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </li>
               </ul>
             </li>
             <li class="team__card">
               <picture class="team__img">
-               <source srcset="./imges/teamtwo.jpg 1x, ./imges/teamtwo@2x.jpg 2x" type="image/jpg">
-               <img src="./imges/teamtwo.jpg" alt="Ольга Рєпіна">
+                <source srcset="./imges/desktop/teamtwo-desktop.jpg 1x, ./imges/desktop/teamtwo-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                <source srcset="./imges/tablet/teamtwo-tablet.jpg 1x, ./imges/tablet/teamtwo-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg">
+                <source srcset="./imges/mobile/teamtwo-mobile.jpg 1x, ./imges/mobile/teamtwo-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg">
+                <img src="./imges/desktop/teamtwo-desktop.jpg" alt="Ігор Дем'яненко">
               </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__position">Frontend Developer</p>
               <ul class="team__img-list">
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-instagram"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-twitter"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-facebook"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </li>
               </ul>
             </li>
             <li class="team__card">
               <picture class="team__img">
-                <source srcset="./imges/teamthree.jpg 1x, ./imges/teamthree@2x.jpg" type="image/jpg">
-                <img src="./imges/teamthree.jpg" alt="Микола Тарасов">
+                <source srcset="./imges/desktop/teamthree-desktop.jpg 1x, ./imges/desktop/teamthree-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                <source srcset="./imges/tablet/teamthree-tablet.jpg 1x, ./imges/tablet/teamthree-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg">
+                <source srcset="./imges/mobile/teamthree-mobile.jpg 1x, ./imges/mobile/teamthree-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg">
+                <img src="./imges/desktop/teamthree-desktop.jpg" alt="Ігор Дем'яненко">
               </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__position">Marketing</p>
               <ul class="team__img-list">
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-instagram"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-twitter"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-facebook"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </li>
               </ul>
             </li>
             <li class="team__card">
               <picture class="team__img">
-               <source srcset="./imges/teamfour.jpg 1x, ./imges/teamfour@2x.jpg 2x" type="image/jpg">
-               <img src="./imges/teamfour.jpg" alt="Михайло Єрмаков">
+                <source srcset="./imges/desktop/teamfour-desktop.jpg 1x, ./imges/desktop/teamfour-desktop@2x.jpg 2x" media="(min-width: 1200px)" type="image/jpg">
+                <source srcset="./imges/tablet/teamfour-tablet.jpg 1x, ./imges/tablet/teamfour-tablet@2x.jpg 2x" media="(min-width: 700px)" type="image/jpg">
+                <source srcset="./imges/mobile/teamfour-mobile.jpg 1x, ./imges/mobile/teamfour-mobile@2x.jpg 2x" media="(max-width: 699px)" type="image/jpg">
+                <img src="./imges/desktop/teamfour-desktop.jpg" alt="Ігор Дем'яненко">
               </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__position">UI Designer</p>
               <ul class="team__img-list">
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-instagram"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-twitter"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-facebook"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </li>
                 <li class="team__img-item">
                   <svg class="team__svg">
-                    <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
+                    <use href="./imges/svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </li>
               </ul>
@@ -393,42 +400,42 @@
             <li class="last__item">
               <a class="last__div">
                 <svg class="last__svg">
-                  <use href="./imges/symbol-defs.svg#icon-one"></use>
+                  <use href="./imges/svg/symbol-defs.svg#icon-one"></use>
                 </svg>
               </a>
             </li>
             <li class="last__item">
               <a class="last__div">
                 <svg class="last__svg">
-                  <use href="./imges/symbol-defs.svg#icon-two"></use>
+                  <use href="./imges/svg/symbol-defs.svg#icon-two"></use>
                 </svg>
               </a>
             </li>
             <li class="last__item">
               <a class="last__div">
                 <svg class="last__svg">
-                  <use href="./imges/symbol-defs.svg#icon-three"></use>
+                  <use href="./imges/svg/symbol-defs.svg#icon-three"></use>
                 </svg>
               </a>
             </li>
             <li class="last__item">
               <a class="last__div">
                 <svg class="last__svg">
-                  <use href="./imges/symbol-defs.svg#icon-four"></use>
+                  <use href="./imges/svg/symbol-defs.svg#icon-four"></use>
                 </svg>
               </a>
             </li>
             <li class="last__item">
               <a class="last__div">
                 <svg class="last__svg">
-                  <use href="./imges/symbol-defs.svg#icon-five"></use>
+                  <use href="./imges/svg/symbol-defs.svg#icon-five"></use>
                 </svg>
               </a>
             </li>
             <li class="last__item">
               <a class="last__div">
                 <svg class="last__svg">
-                  <use href="./imges/symbol-defs.svg#icon-six"></use>
+                  <use href="./imges/svg/symbol-defs.svg#icon-six"></use>
                 </svg>
               </a>
             </li>
@@ -459,22 +466,22 @@
               <ul class="footer__list"> 
                 <li class="footer__item"> 
                   <svg class="footer__svg"> 
-                    <use href="./imges/symbol-defs.svg#icon-instagram"></use> 
+                    <use href="./imges/svg/symbol-defs.svg#icon-instagram"></use> 
                   </svg> 
                 </li> 
                 <li class="footer__item"> 
                   <svg class="footer__svg"> 
-                    <use href="./imges/symbol-defs.svg#icon-twitter"></use> 
+                    <use href="./imges/svg/symbol-defs.svg#icon-twitter"></use> 
                   </svg> 
                 </li> 
                 <li class="footer__item"> 
                   <svg class="footer__svg"> 
-                    <use href="./imges/symbol-defs.svg#icon-facebook"></use> 
+                    <use href="./imges/svg/symbol-defs.svg#icon-facebook"></use> 
                   </svg> 
                 </li> 
                 <li class="footer__item"> 
                   <svg class="footer__svg"> 
-                    <use href="./imges/symbol-defs.svg#icon-linkedin"></use> 
+                    <use href="./imges/svg/symbol-defs.svg#icon-linkedin"></use> 
                   </svg> 
                 </li> 
               </ul> 

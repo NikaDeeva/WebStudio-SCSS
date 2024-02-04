@@ -11,9 +11,14 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-image: url(../imges/benefitsone.png);
+    background-image: url(../imges/mobile/benefitsone-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../imges/mobile/benefitsone-mobile@2x.png);
+      }
   }
   &__letter__two::before {
     content: "";
@@ -23,9 +28,14 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-image: url(../imges/benefitstwo.png);
+    background-image: url(../imges/mobile/benefitstwo-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../imges/mobile/benefitstwo-mobile@2x.png);
+      }
   }
   &__letter__three::before {
     content: "";
@@ -35,9 +45,14 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-image: url(../imges/benefitsthree.png);
+    background-image: url(../imges/mobile/benefitsthree-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../imges/mobile/benefitsthree-mobile@2x.png);
+      }
   }
   &__letter__four::before {
     content: "";
@@ -47,9 +62,14 @@
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-image: url(../imges/benefitsfour.png);
+    background-image: url(../imges/mobile/benefitsfour-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../imges/mobile/benefitsfour-mobile@2x.png);
+      }
   }
   &__title {
     color: $title-text-color;
@@ -83,15 +103,39 @@
     }
     &__letter__one::before {
       width: 354px;
+      background-image: url(../imges/tablet/benefitsone-tablet.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/tablet/benefitsone-tablet@2x.png);
     }
+  }
     &__letter__two::before {
       width: 354px;
+      background-image: url(../imges/tablet/benefitstwo-tablet.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/tablet/benefitstwo-tablet@2x.png);
+    }
     }
     &__letter__three::before {
       width: 354px;
+      background-image: url(../imges/tablet/benefitsthree-tablet.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/tablet/benefitsthree-tablet@2x.png);
+    }
     }
     &__letter__four::before {
       width: 354px;
+      background-image: url(../imges/tablet/benefitsfour-tablet.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/tablet/benefitsfour-tablet@2x.png);
+    }
     }
   }
 }
@@ -109,32 +153,40 @@
     }
     &__letter__one::before {
       width: 270px;
+      background-image: url(../imges/desktop/benefitsone-desktop.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/desktop/benefitsone-desktop@2x.png);
     }
+  }
     &__letter__two::before {
       width: 270px;
+      background-image: url(../imges/desktop/benefitstwo-desktop.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/desktop/benefitstwo-desktop@2x.png);
+    }
     }
     &__letter__three::before {
       width: 270px;
+      background-image: url(../imges/desktop/benefitsthree-desktop.png);
+      @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../imges/desktop/benefitsthree-desktop@2x.png);
+    }
     }
     &__letter__four::before {
       width: 270px;
-    }
-  }
-}
-@media screen and (min-device-pixel-ratio: 2),
+      background-image: url(../imges/desktop/benefitsfour-desktop.png);
+      @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .benefits__letter__one::before {
-    background-image: url(../imges/benefitsone@2x.png);
-  }
-  .benefits__letter__two::before {
-    background-image: url(../imges/benefitstwo@2x.png);
-  }
-  .benefits__letter__three::before {
-    background-image: url(../imges/benefitsthree@2x.png);
-  }
-  .benefits__letter__four::before {
-    background-image: url(../imges/benefitsfour@2x.png);
+    background-image: url(../imges/desktop/benefitsfour-desktop@2x.png);
+    }
+    }
   }
 }
 /*.benefits {
