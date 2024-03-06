@@ -147,6 +147,8 @@
   padding-top: 60px;
 }
 .footer__form__input {
+  max-width: 450px;
+  min-width: 300px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(33, 150, 243, 0);
@@ -1181,6 +1183,7 @@ img {
 }
 .benefits {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .benefits__block {
   width: 450px;
@@ -1196,6 +1199,7 @@ img {
   background-image: url(../imges/mobile/benefitsone-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits__letter__one::before {
@@ -1213,6 +1217,7 @@ img {
   background-image: url(../imges/mobile/benefitstwo-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits__letter__two::before {
@@ -1230,6 +1235,7 @@ img {
   background-image: url(../imges/mobile/benefitsthree-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits__letter__three::before {
@@ -1247,6 +1253,7 @@ img {
   background-image: url(../imges/mobile/benefitsfour-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 70px;
 }
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefits__letter__four::before {
@@ -2341,12 +2348,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-right: 12px;
   margin-left: 12px;
   margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .team__img-item {
   width: 44px;

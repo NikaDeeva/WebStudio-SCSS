@@ -35,10 +35,11 @@
   }
    &__img-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-right: 12px;
     margin-left: 12px;
     margin-bottom: 24px;
+    padding-bottom: 24px;
   }
   &__img-item {
     width: 44px;

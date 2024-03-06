@@ -1,5 +1,6 @@
 .benefits {
   padding-top: 60px;
+  padding-bottom: 60px;
   &__block {
     width: 450px;
   }
@@ -14,6 +15,7 @@
     background-image: url(../imges/mobile/benefitsone-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px;
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -31,6 +33,7 @@
     background-image: url(../imges/mobile/benefitstwo-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px;
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -48,6 +51,7 @@
     background-image: url(../imges/mobile/benefitsthree-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px;
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -65,6 +69,7 @@
     background-image: url(../imges/mobile/benefitsfour-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 70px;
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
